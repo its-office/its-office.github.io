@@ -1,0 +1,143 @@
+#navbar-container .blurb {
+  padding: 40px 60px;
+  margin-top: auto;
+}
+
+#navbar-container {
+  background-image: url("../service-landscape.jpg");
+  background-size: cover;
+  background-position: right;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+#navbar-container .blurb {
+  color: white;
+}
+
+.popout {
+  display: none;
+}
+
+.quote {
+  text-align: right;
+  margin-top: 10px;
+}
+.quote a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+.quote a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#quote-box {
+  padding: 40px 60px;
+}
+#quote-box .header {
+  padding-bottom: 20px;
+}
+#quote-box button {
+  background: white;
+  font-weight: bold;
+  border: 3px solid #f5ba25;
+  font-size: 1.25rem;
+  padding: 5px 10px;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+}
+
+.service-box {
+  padding: 20px 20px;
+}
+.service-box .content {
+  display: flex;
+  flex-direction: column;
+}
+.service-box .content .header {
+  border: none;
+}
+.service-box .header {
+  border-bottom: 4px solid black;
+  margin-bottom: 10px;
+}
+
+.service-list {
+  width: 100%;
+  display: flex;
+}
+.service-list .service-list-icon {
+  padding-right: 20px;
+}
+.service-list .service-list-icon img {
+  width: 75px;
+}
+.service-list .list {
+  width: 100%;
+}
+.service-list .list-item {
+  padding: 3px 0px;
+  margin: 15px 0px;
+}
+.service-list .list-item span {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+.service-list .list-item span img {
+  width: 20px;
+}
+.service-list .list-item span img.minus {
+  display: none;
+}
+.service-list .list-item .popout {
+  padding-top: 10px;
+}
+.service-list .list-item.active .plus {
+  display: none;
+}
+.service-list .list-item.active .minus {
+  display: block;
+}
+
+.service-entry-icon {
+  padding-right: 20px;
+}
+.service-entry-icon img {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .service-box {
+    padding: 40px 60px;
+  }
+
+  .service-box .content {
+    flex-direction: row;
+    padding: 40px 0px;
+  }
+
+  .service-list {
+    width: 50%;
+    margin: 0px 40px;
+  }
+
+  .service-box .service-entry {
+    display: flex;
+    margin: 0px 40px;
+    width: 50%;
+  }
+  .service-box .service-entry .service {
+    width: 100%;
+  }
+
+  .service-entry-icon {
+    padding-right: 20px;
+  }
+  .service-entry-icon img {
+    display: block;
+    width: 75px;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,223 @@
+.hide-on-mobile {
+    display: none;
+}
+
+.divider img {
+    display: block;
+    max-width: 100%;
+    height: 5px;
+}
+
+#navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: lightblue;
+    height: 50vh;
+    padding: 0;
+
+    .blurb {
+        margin-top: auto;
+        padding: 10px 30px;
+
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.navbar {
+    padding-bottom: 15px;
+    background: white;
+
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    #brand {
+        color: black;
+        all: unset;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+        margin: 0;
+        display: none;
+    }
+
+    img {
+        width: 75px;
+    }
+}
+
+.boxes-container {
+    padding: 0;
+
+    .row {
+        margin: 0;
+    }
+}
+
+.content-boxes .header, #links > *, #right-side > * {
+    padding: 13px 30px;
+}
+
+#right-side {
+    padding: 0;
+}
+
+#first-boxes {
+
+    .content-boxes .header {
+        background-color: #f4c2bd;
+
+        h5 {
+            margin: 0;
+        }
+    }
+}
+
+#second-boxes {
+    .content-boxes .header {
+        width: 100%;
+
+        h5 {
+            margin: 0;
+        }
+    }
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+
+    span {
+        color: grey;
+        font-size: .75rem;
+    }
+}
+
+// This applies from 960px onwards
+@media (min-width: 960px) {
+    .hide-on-desktop {
+        display: none;
+    }
+
+    .hide-on-mobile {
+        display: block;
+    }
+
+    .content-boxes .header, #links > *, #right-side > * , #expertise, #partnerships {
+        padding: 40px 60px;
+    }
+
+    #navbar-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+
+        .blurb {
+            padding-left: 50%;
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .navbar {
+        padding: 40px 60px;
+        flex-direction: row;
+        align-items: baseline;
+
+        a {
+            font-size: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-right: 60px;
+            display: block;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .boxes-container {
+
+        h4 {
+            font-size: 2rem;
+        }
+    }
+
+    #first-boxes .col-lg-6:first-child, #second-boxes > h4 {
+        background-color: transparent;
+    }
+
+    #first-boxes .content-boxes .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #second-boxes .content-boxes .header {
+        background-color: transparent;
+    }
+
+    .link-icon a {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 30%;
+            margin: 20px;
+            margin-bottom: 40px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #links > * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #expertise {
+        background-color: #C5F2F4;
+
+        h5 {
+            margin-bottom: 200px;
+        }
+
+        p {
+            width: 50%;
+        }
+    }
+
+    #partnerships {
+        .link-icon {
+            width: 20%;
+        }
+
+        h5 {
+            margin-bottom: 30px;
+        }
+    }
+
+    #footer {
+        flex-direction: row;
+        padding: 10px 100px;
+    }
+}

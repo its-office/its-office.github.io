@@ -1,0 +1,169 @@
+#navbar-container {
+    .blurb {
+        padding: 40px 60px;
+        margin-top: auto;
+    }
+}
+
+#navbar-container {
+  background-image: url("../service-landscape.jpg");
+  background-size: cover;
+  background-position: right;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+
+  .blurb {
+    color: white;
+  }
+}
+
+.popout {
+    display: none;
+}
+
+.quote {
+    text-align: right;
+    margin-top: 10px;
+
+    a {
+        color:rgba(0,0,0,.5);
+        text-decoration: underline;
+
+        &:hover {
+            color:rgba(0,0,0,.6);
+        }
+    }
+}
+
+#quote-box {
+    padding: 40px 60px;
+
+    .header {
+        padding-bottom: 20px;
+    }
+
+    button {
+        background: white;
+        font-weight: bold;
+        border: 3px solid #f5ba25;
+        font-size: 1.25rem;
+        padding: 5px 10px;
+        display: block;
+        margin: 0 auto;
+        outline: none;
+    }
+}
+
+.service-box {
+    padding: 20px 20px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            border: none;
+        }
+    }
+
+    .header {
+        border-bottom: 4px solid black;
+        margin-bottom: 10px;
+    }
+}
+
+.service-list {
+    width: 100%;
+    display: flex;
+
+    .service-list-icon {
+        padding-right: 20px;
+
+        img {
+            width: 75px;
+        }
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .list-item {
+        padding: 3px 0px;
+        margin: 15px 0px;
+
+        span {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+
+            img {
+                width: 20px;
+
+                &.minus {
+                    display: none;
+                }
+            }
+        }
+
+        .popout {
+            padding-top: 10px;
+        }
+
+        &.active {
+            .plus {
+                display: none;
+            }
+
+            .minus {
+                display: block;
+            }
+        }
+    }
+}
+
+.service-entry-icon {
+    padding-right: 20px;
+
+    img {
+        display: none;
+    }
+}
+
+// This applies from 960px onwards
+@media (min-width: 960px) {
+
+    .service-box {
+        padding: 40px 60px;
+    }
+
+    .service-box .content {
+        flex-direction: row;
+        padding: 40px 0px;
+    }
+
+    .service-list {
+        width: 50%;
+        margin: 0px 40px;
+    }
+
+    .service-box .service-entry {
+        display: flex;
+        margin: 0px 40px;
+        width: 50%;
+
+        .service {
+            width: 100%;
+        }
+    }
+
+    .service-entry-icon {
+        padding-right: 20px;
+
+        img {
+            display: block;
+            width: 75px;
+        }
+    }
+
+}

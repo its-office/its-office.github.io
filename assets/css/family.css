@@ -1,0 +1,36 @@
+.employee {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+}
+.employee img {
+  display: none;
+}
+
+#navbar-container {
+  background-image: url("../family-landscape.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+#navbar-container .blurb {
+  color: white;
+}
+
+@media (min-width: 960px) {
+  #first-boxes .header {
+    padding: 20px 60px;
+  }
+
+  .employee {
+    padding: 40px 60px;
+  }
+  .employee img {
+    display: block;
+    height: 150px;
+    margin: 20px 40px;
+    border-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=family.css.map */
