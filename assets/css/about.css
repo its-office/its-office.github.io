@@ -10,7 +10,7 @@
 }
 
 #navbar-container {
-  background-image: url("../about-landscape.jpg");
+  background-image: url("../about-landscape.JPG");
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
@@ -23,8 +23,37 @@
   background: url("../Brad on Marne B.jpeg");
   background-size: cover;
   background-position: center;
-  color: white;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 0 2000px rgba(217, 255, 225, 0.72);
+}
+
+#start-career {
+  background: url("../home-terminal-services.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(249, 232, 255, 0.72);
+}
+#start-career a {
+  text-decoration: none;
+  color: black;
+}
+#start-career:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2000px rgba(249, 232, 255, 0.78);
+}
+
+#meet-its {
+  background: url("../home-service.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 215, 0.72);
+}
+#meet-its a {
+  text-decoration: none;
+  color: black;
+}
+#meet-its:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 215, 0.78);
 }
 
 @media (min-width: 960px) {

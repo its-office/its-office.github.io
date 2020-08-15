@@ -41,15 +41,14 @@
         padding-bottom: 20px;
     }
 
-    button {
+    .button {
         background: white;
         font-weight: bold;
         border: 3px solid #f5ba25;
         font-size: 1.25rem;
         padding: 5px 10px;
-        display: block;
-        margin: 0 auto;
         outline: none;
+        color: black;
     }
 }
 
