@@ -2,8 +2,10 @@
   background-image: url("../careers-landscape.jpg");
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
+
 #navbar-container .blurb {
   color: white;
 }
@@ -28,7 +30,8 @@
   background-size: cover;
   background-position: center;
   color: white;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 
 #first-boxes {
@@ -39,20 +42,29 @@
   #navbar-container .blurb {
     padding: 40px 60px;
   }
-
   #first-boxes .header {
     padding: 20px 60px;
   }
-
   .quote {
     padding: 40px 60px;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .quote .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .quote .profile img {
     height: 200px;
@@ -67,5 +79,3 @@
     text-align: center;
   }
 }
-
-/*# sourceMappingURL=careers.css.map */
