@@ -11,7 +11,6 @@
 }
 
 #apply-button {
-  background: #fdf4fd;
   font-weight: bold;
   border: 5px solid #f5ba25;
   border-radius: 3px;
@@ -23,7 +22,7 @@
 
 #apply-button:hover {
   text-decoration: none;
-  background: #fdf4e1;
+  background: #fdf8ec;
 }
 
 #apply-link {
